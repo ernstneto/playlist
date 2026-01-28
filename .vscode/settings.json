@@ -1,0 +1,23 @@
+{
+    // Editor settings
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.trimAutoWhitespace": true,
+
+    // Files
+    "files.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/.DS_Store": true
+    },
+
+    // Formatting
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // Workspace
+    "workbench.colorTheme": "Default Dark Modern"
+}
