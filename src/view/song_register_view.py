@@ -18,3 +18,18 @@ class SongRegisterView:
 
   def __clear(self):
     os.system("cls||clear")
+
+  def registry_song_success(self, controller_response: dict) -> None:
+    self.__clear()
+    print("Música cadastrada com sucesso!\n")
+    print("Detalhes da música cadastrada:")
+    print(f"Título: {controller_response['attributes']['title']}")
+    print(f"Artista: {controller_response['attributes']['artist']}")
+    print(f"Ano de Publicação: {controller_response['attributes']['year']}\n")
+    input("Pressione Enter para continuar...")
+  
+  def registry_song_failure(self, controller_response: dict) -> None:
+    self.__clear()
+    print("Falha ao cadastrar a música.\n")
+    print(f"Erro: {controller_response['error']}\n")
+    input("Pressione Enter para continuar...")
