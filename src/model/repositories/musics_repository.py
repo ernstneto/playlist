@@ -18,4 +18,4 @@ class MusicRepository:
         return None
 
 # Singleton instance
-music_repository = __MusicRepository()
+music_repository = MusicRepository()
